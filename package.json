@@ -1,0 +1,21 @@
+{
+  "name": "food-app",
+  "version": "1.0.0",
+  "description": "Food delivery app",
+  "main": "App.js",
+  "scripts": {
+    "test": "Jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git remote add origin https://github.com/Raushan0303/Food-village.git"
+  },
+  "keywords": [
+    "Food"
+  ],
+  "author": "Raushan choudhary",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  }
+}
