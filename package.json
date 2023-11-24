@@ -4,6 +4,9 @@
   "description": "Food delivery app",
   "main": "App.js",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel index.html",
+
     "test": "Jest"
   },
   "repository": {
@@ -18,4 +21,6 @@
   "devDependencies": {
     "parcel": "^2.10.3"
   }
+ 
 }
+
