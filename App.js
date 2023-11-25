@@ -91,26 +91,34 @@ const Title = () => (
 
 
 ];
+//props is like object of resturant
+//instead of props pass as parameter we can pass {resturant} -> this is like destructuring the object
 
-  const ResturantCard = (props) => {
+  const ResturantCard = (
+    {Name,
+    Image,
+    cusines,
+    rating}
+    ) => {
+    
     return (
       <div className="card">
-      <img src={props.resturant.Image}/>
-      <h2>{props.resturant.Name}</h2>
-      <h3>{props.resturant.cusines.join(", ")}</h3>
-      <h4>{props.resturant.rating} star</h4>
+      <img src={Image}/>
+      <h2>{Name}</h2>
+      <h3>{cusines.join(", ")}</h3>
+      <h4>{rating} star</h4>
       </div>
     )
   }
   const Body = () => {
     return (
       <div className="Resturant-list">
-        <ResturantCard resturant={ResturantList[0]}/>
-        <ResturantCard resturant={ResturantList[1]}/>
-        <ResturantCard resturant={ResturantList[2]}/>
-        <ResturantCard resturant={ResturantList[3]}/>
-        <ResturantCard resturant={ResturantList[4]}/>
-        <ResturantCard resturant={ResturantList[5]}/>
+        <ResturantCard {...ResturantList[0]}/>
+        <ResturantCard {...ResturantList[1]}/>
+        <ResturantCard {...ResturantList[2]}/>
+        <ResturantCard {...ResturantList[3]}/>
+        <ResturantCard {...ResturantList[4]}/>
+        <ResturantCard {...ResturantList[5]}/>
         
 
       </div>
