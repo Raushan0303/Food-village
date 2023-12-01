@@ -44,7 +44,8 @@ const Title = () => (
       </div>
     );
   };
- const ResturantList = [{
+ const ResturantList = [
+ {
   Name : "Khana Khazana",
   Image :
    "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/3fb0b5c56d29759520d69213ba4fef8f",
@@ -86,19 +87,17 @@ const Title = () => (
   cusines : ["chienese","Sweets"],
   rating : "3.9",
  },
-
-
-
-
 ];
 //props is like object of resturant
 //instead of props pass as parameter we can pass {resturant} -> this is like destructuring the object
 
   const ResturantCard = (
-    {Name,
+    {
+      Name,
     Image,
     cusines,
-    rating}
+    rating
+  }
     ) => {
     
     return (
@@ -113,12 +112,12 @@ const Title = () => (
   const Body = () => {
     return (
       <div className="Resturant-list">
-        <ResturantCard {...ResturantList[0]}/>
-        <ResturantCard {...ResturantList[1]}/>
-        <ResturantCard {...ResturantList[2]}/>
-        <ResturantCard {...ResturantList[3]}/>
-        <ResturantCard {...ResturantList[4]}/>
-        <ResturantCard {...ResturantList[5]}/>
+        {
+          ResturantList.map((resturant)=>{
+            return  <ResturantCard {...resturant}/>
+          })
+        }
+        
         
 
       </div>
@@ -133,20 +132,16 @@ const Title = () => (
   const AppLayout = () => {
     return (
       <>
-        <HeaderComponent /><Body /><Footer />
+        <HeaderComponent />
+        <Body />
+        <Footer />
       </>
     )
   }
 
 
-
-
-
-
-
-  
-  const root = ReactDOM.createRoot(document.getElementById("root"));
-  root.render(<AppLayout />);
+ const root = ReactDOM.createRoot(document.getElementById("root"));
+ root.render(<AppLayout />);
 
 
 
