@@ -1,5 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+//default export
+// import Header from "./components/Header"
+//named export
+import  { Title } from "./components/Header";
+// import * as xyz from "./components/Header"
  /**
          * Header
          *   - Logo
@@ -29,7 +34,7 @@ const Title = () => (
 );
   
   // Composing Components
-  const HeaderComponent = () => {
+  const Header = () => {
     return (
       <div className="header">
         <Title />
@@ -142,7 +147,7 @@ const Searchbar = () =>{
   const AppLayout = () => {
     return (
       <>
-        <HeaderComponent />
+        <Header />
         <Searchbar />
         <Body />
         <Footer />
