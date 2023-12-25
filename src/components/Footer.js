@@ -1,5 +1,5 @@
-const Footer = ()=>{
-    return (
-        <p>this is footer</p>
-    )
-}
+// const = ()=>{
+//     return (
+//         <p>this is footer</p>
+//     )
+// }

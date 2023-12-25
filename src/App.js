@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import Header from "./components/Header";
-import Body from "./components/Body";
-import Footer from "./components/Footer";
+// import Header from "./components/Header";
+// import Body from "./components/Body";
+// import Footer from "./components/Footer";
 
  /**
          * Header
@@ -37,53 +37,41 @@ const Searchbar = () =>{
     </a>
   )
 }
-
-  const ResturantCard = (
-    {
-      Name,
-    Image,
-    cusines,
-    rating
-  }
-    ) => {
+const Title = () => (
+  <a href="/">
+  <img 
+  className="logo"
+  alt="logo"
+   src="https://lh3.googleusercontent.com/p/AF1QipMKTUs5jo3Hoihm-GazeAIg7Pn5Gmr07GQD5o6W=w1080-h608-p-no-v0"></img>
     
-    return (
-      <div className="card">
-      <img src={Image}/>
-      <h2>{Name}</h2>
-      <h3>{cusines.join(", ")}</h3>
-      <h4>{rating} star</h4>
+   </a>
+)
+const Header= () => {
+  return (
+    <div className="header">
+     <Title />
+     
+      <div className="nav-item">
+     
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Cart</li>
+        </ul>
       </div>
-    )
-  }
-  const Body = () => {
-    return (
-      <div className="Resturant-list">
-        {
-          ResturantList.map((resturant)=>{
-            return  <ResturantCard {...resturant}/>
-          })
-        }
-        
-        
+    </div>
+  );
+};
 
-      </div>
-    )
-  };
-  const Footer = () => {
-    return (
-      <h4>Footer</h4>
-    )
-  };
-
+  
+ 
   const AppLayout = () => {
     return (
       <>
         <Header />
         <Searchbar />
-        <Body />
-        <Footer />
-    
+       
       </>
     )
   }
