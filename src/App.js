@@ -38,7 +38,44 @@ const Searchbar = () =>{
   )
 }
 
- 
+  const ResturantCard = (
+    {
+      Name,
+    Image,
+    cusines,
+    rating
+  }
+    ) => {
+    
+    return (
+      <div className="card">
+      <img src={Image}/>
+      <h2>{Name}</h2>
+      <h3>{cusines.join(", ")}</h3>
+      <h4>{rating} star</h4>
+      </div>
+    )
+  }
+  const Body = () => {
+    return (
+      <div className="Resturant-list">
+        {
+          ResturantList.map((resturant)=>{
+            return  <ResturantCard {...resturant}/>
+          })
+        }
+        
+        
+
+      </div>
+    )
+  };
+  const Footer = () => {
+    return (
+      <h4>Footer</h4>
+    )
+  };
+
   const AppLayout = () => {
     return (
       <>

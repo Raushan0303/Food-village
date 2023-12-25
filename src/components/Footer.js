@@ -1,7 +1,5 @@
-
 const Footer = ()=>{
-    <p>This is Footer</p>
+    return (
+        <p>this is footer</p>
+    )
 }
-
-
-export default Footer;
