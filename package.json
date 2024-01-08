@@ -8,7 +8,6 @@
     "build": "parcel index.html",
     "test": "Jest"
   },
-
   "repository": {
     "type": "git",
     "url": "git remote add origin https://github.com/Raushan0303/Food-village.git"
@@ -27,5 +26,4 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
-  
 }
