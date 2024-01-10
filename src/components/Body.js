@@ -1,14 +1,14 @@
 import { restaurantList } from "../utils/constant";
 import RestaurantCard from "./RestaurantCard";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 
 
 function filterData(searchText, restaurants) {
   const filterData = restaurants.filter((restaurant) =>
-  restaurant?.name.toLowerCase().includes(searchText.toLowerCase())
+  restaurant?.info?.name.toLowerCase().includes(searchText.toLowerCase())
   );
   return filterData;
 }
@@ -19,6 +19,26 @@ const Body = () => {
   // useState: To create a state variable, searchText is local state variable
   const [searchText, setSearchText] = useState("");
   const [restaurants, setRestaurants] = useState(restaurantList);
+
+  useEffect(()=>{
+    fetchData();
+  },[]);
+
+  const fetchData = async () => {
+    const data = await fetch
+    (
+      "https://www.swiggy.com/mapi/homepage/getCards?lat=26.1542045&lng=85.8918454"
+      
+    );
+  
+    const Json = await data.json();
+    console.log(Json);
+     setRestaurants(Json.data.success.cards[3].gridWidget.gridElements.infoWithStyle.restaurants);
+  
+   
+  }
+  
+  
   return (
     <>
       <div className="search-container">
@@ -42,9 +62,9 @@ const Body = () => {
         </button>
       </div>
       <div className="restaurant-list">
-        {restaurants.map((restaurant) => {
+      {restaurants.map((restaurant) => {
           return (
-            <RestaurantCard key={restaurant} {...restaurant} />
+            <RestaurantCard key={restaurant.info.id} {...restaurant.info} />
           );
         })}
       </div>
@@ -52,4 +72,4 @@ const Body = () => {
   );
 };
 
-  export default Body;
+export default Body;

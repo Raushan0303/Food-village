@@ -1,30 +1,30 @@
-
+import { IMG_CDN_URL } from "../utils/constant";
 const RestaurantCard = ({
-  Image,
+  cloudinaryImageId,
   name,
-  cusines,
-  rating,
+  cuisines,
+  area,
+  lastMileTravelString,
   costForTwoString,
+  avgRating,
 }) => {
   return (
     <div className="card">
-      {console.log(Image)}
-      {console.log(name)}
-      <img src={Image} />
+      <img src={IMG_CDN_URL + cloudinaryImageId} />
       <h2>{name}</h2>
-      <h4>{cusines}</h4>
-      
+      <h5>{cuisines.join(", ")}</h5>
+      <h6>{area}</h6>
       <span>
         <h4
           style={
-            rating < 4 ? { backgroundColor: "red" } : { color: "white" }
+            avgRating < 4 ? { backgroundColor: "red" } : { color: "white" }
           }
         >
           <i className="fa-solid fa-star"></i>
-          {rating}
+          {avgRating}
         </h4>
+        <h4>{lastMileTravelString}</h4>
         <h4>{costForTwoString}</h4>
-       
       </span>
     </div>
   );

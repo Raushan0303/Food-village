@@ -97,9 +97,9 @@
     transform: scale(1.05);
   }
   
-  .card >img {
+  .card > img {
     width: 100%;
-    /* border-radius: 10px; */
+    border-radius: 10px;
   }
   
   .card > span {
