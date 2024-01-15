@@ -920,344 +920,344 @@ export const IMG_CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/
           "type": "DEEPLINK"
         }
       },
-      {
-        "info": {
-          "id": "441024",
-          "name": "Kathi Junction",
-          "cloudinaryImageId": "rxau7pql0k47jwhlo8kx",
-          "locality": "Vivekanand colony",
-          "areaName": "Purnea Locality",
-          "costForTwo": "₹240 for two",
-          "cuisines": [
-            "North Indian",
-            "Chinese",
-            "Biryani"
-          ],
-          "avgRating": 4,
-          "parentId": "1935",
-          "avgRatingString": "4.0",
-          "totalRatingsString": "1K+",
-          "sla": {
-            "deliveryTime": 26,
-            "lastMileTravel": 1.2,
-            "serviceability": "SERVICEABLE",
-            "slaString": "26 mins",
-            "lastMileTravelString": "1.2 km",
-            "iconType": "ICON_TYPE_EMPTY"
-          },
-          "availability": {
-            "nextCloseTime": "2024-01-10 23:45:00",
-            "opened": true
-          },
-          "badges": {
-            
-          },
-          "isOpen": true,
-          "type": "F",
-          "badgesV2": {
-            "entityBadges": {
-              "textBased": {
-                
-              },
-              "imageBased": {
-                
-              },
-              "textExtendedBadges": {
-                
-              }
-            }
-          },
-          "aggregatedDiscountInfoV3": {
-            "header": "₹120 OFF",
-            "subHeader": "ABOVE ₹199",
-            "discountTag": "FLAT DEAL"
-          },
-          "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-              "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-              "lottie": {
-                
-              },
-              "video": {
-                
-              }
-            }
-          },
-          "reviewsSummary": {
-            
-          },
-          "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-          "restaurantOfferPresentationInfo": {
-            
-          }
-        },
-        "analytics": {
-          
-        },
-        "cta": {
-          "link": "swiggy://menu?restaurant_id=441024",
-          "text": "RESTAURANT_MENU",
-          "type": "DEEPLINK"
-        }
-      },
-      {
-        "info": {
-          "id": "735103",
-          "name": "House Of Delicious",
-          "cloudinaryImageId": "d0bdbf974886106e3203bf04801b46b8",
-          "locality": "Utsav Bhawan",
-          "areaName": "Purnea",
-          "costForTwo": "₹249 for two",
-          "cuisines": [
-            "Snacks",
-            "Chinese",
-            "Burgers"
-          ],
-          "avgRating": 4.2,
-          "parentId": "233841",
-          "avgRatingString": "4.2",
-          "totalRatingsString": "10+",
-          "promoted": true,
-          "adTrackingId": "cid=10519276~p=4~eid=0000018c-f29f-bff2-091b-aba400e2042b~srvts=1704877604850~45995",
-          "sla": {
-            "deliveryTime": 20,
-            "lastMileTravel": 1.2,
-            "serviceability": "SERVICEABLE",
-            "slaString": "20 mins",
-            "lastMileTravelString": "1.2 km",
-            "iconType": "ICON_TYPE_EMPTY"
-          },
-          "availability": {
-            "nextCloseTime": "2024-01-11 00:00:00",
-            "opened": true
-          },
-          "badges": {
-            
-          },
-          "isOpen": true,
-          "type": "F",
-          "badgesV2": {
-            "entityBadges": {
-              "textBased": {
-                
-              },
-              "imageBased": {
-                
-              },
-              "textExtendedBadges": {
-                
-              }
-            }
-          },
-          "aggregatedDiscountInfoV3": {
-            "header": "₹120 OFF",
-            "subHeader": "ABOVE ₹199",
-            "discountTag": "FLAT DEAL"
-          },
-          "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-              "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-              "lottie": {
-                
-              },
-              "video": {
-                
-              }
-            }
-          },
-          "reviewsSummary": {
-            
-          },
-          "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-          "restaurantOfferPresentationInfo": {
-            
-          }
-        },
-        "analytics": {
-          
-        },
-        "cta": {
-          "link": "swiggy://menu?restaurant_id=735103",
-          "text": "RESTAURANT_MENU",
-          "type": "DEEPLINK"
-        }
-      },
-      {
-        "info": {
-          "id": "564167",
-          "name": "Haldiram's Prabhuji",
-          "cloudinaryImageId": "eltcarxf1yqd5p0vvymo",
-          "locality": "Bhatta Bazar",
-          "areaName": "Purnea Locality",
-          "costForTwo": "₹299 for two",
-          "cuisines": [
-            "Snacks",
-            "Chinese",
-            "Beverages",
-            "Desserts"
-          ],
-          "avgRating": 4.1,
-          "veg": true,
-          "parentId": "2945",
-          "avgRatingString": "4.1",
-          "totalRatingsString": "100+",
-          "sla": {
-            "deliveryTime": 21,
-            "lastMileTravel": 0.7,
-            "serviceability": "SERVICEABLE",
-            "slaString": "21 mins",
-            "lastMileTravelString": "0.7 km",
-            "iconType": "ICON_TYPE_EMPTY"
-          },
-          "availability": {
-            "nextCloseTime": "2024-01-10 21:15:00",
-            "opened": true
-          },
-          "badges": {
-            "imageBadges": [
-              {
-                "imageId": "v1695133679/badges/Pure_Veg111.png",
-                "description": "pureveg"
-              }
-            ]
-          },
-          "isOpen": true,
-          "type": "F",
-          "badgesV2": {
-            "entityBadges": {
-              "textExtendedBadges": {
-                
-              },
-              "textBased": {
-                
-              },
-              "imageBased": {
-                "badgeObject": [
-                  {
-                    "attributes": {
-                      "imageId": "v1695133679/badges/Pure_Veg111.png",
-                      "description": "pureveg"
+       {
+                    "info": {
+                      "id": "441024",
+                      "name": "Kathi Junction",
+                      "cloudinaryImageId": "rxau7pql0k47jwhlo8kx",
+                      "locality": "Vivekanand colony",
+                      "areaName": "Purnea Locality",
+                      "costForTwo": "₹240 for two",
+                      "cuisines": [
+                        "North Indian",
+                        "Chinese",
+                        "Biryani"
+                      ],
+                      "avgRating": 4,
+                      "parentId": "1935",
+                      "avgRatingString": "4.0",
+                      "totalRatingsString": "1K+",
+                      "sla": {
+                        "deliveryTime": 26,
+                        "lastMileTravel": 1.2,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "26 mins",
+                        "lastMileTravelString": "1.2 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-01-10 23:45:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "textBased": {
+                            
+                          },
+                          "imageBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "₹120 OFF",
+                        "subHeader": "ABOVE ₹199",
+                        "discountTag": "FLAT DEAL"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      }
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "swiggy://menu?restaurant_id=441024",
+                      "text": "RESTAURANT_MENU",
+                      "type": "DEEPLINK"
                     }
-                  }
-                ]
-              }
-            }
-          },
-          "aggregatedDiscountInfoV3": {
-            "header": "₹120 OFF",
-            "subHeader": "ABOVE ₹199",
-            "discountTag": "FLAT DEAL"
-          },
-          "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-              "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-              "lottie": {
-                
-              },
-              "video": {
-                
-              }
-            }
-          },
-          "reviewsSummary": {
-            
-          },
-          "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-          "restaurantOfferPresentationInfo": {
-            
-          }
-        },
-        "analytics": {
-          
-        },
-        "cta": {
-          "link": "swiggy://menu?restaurant_id=564167",
-          "text": "RESTAURANT_MENU",
-          "type": "DEEPLINK"
-        }
-      },
-      {
-        "info": {
-          "id": "799679",
-          "name": "Champaran Meat House",
-          "cloudinaryImageId": "da2592e0d25f079cbf9aedf436cabf6f",
-          "locality": "Rajeswari Nagar",
-          "areaName": "Purnea",
-          "costForTwo": "₹299 for two",
-          "cuisines": [
-            "Biryani"
-          ],
-          "avgRating": 4.1,
-          "parentId": "57619",
-          "avgRatingString": "4.1",
-          "totalRatingsString": "10+",
-          "sla": {
-            "deliveryTime": 23,
-            "lastMileTravel": 0.7,
-            "serviceability": "SERVICEABLE",
-            "slaString": "23 mins",
-            "lastMileTravelString": "0.7 km",
-            "iconType": "ICON_TYPE_EMPTY"
-          },
-          "availability": {
-            "nextCloseTime": "2024-01-10 23:00:00",
-            "opened": true
-          },
-          "badges": {
-            
-          },
-          "isOpen": true,
-          "type": "F",
-          "badgesV2": {
-            "entityBadges": {
-              "textBased": {
-                
-              },
-              "imageBased": {
-                
-              },
-              "textExtendedBadges": {
-                
-              }
-            }
-          },
-          "aggregatedDiscountInfoV3": {
-            "header": "₹120 OFF",
-            "subHeader": "ABOVE ₹199",
-            "discountTag": "FLAT DEAL"
-          },
-          "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-              "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-              "lottie": {
-                
-              },
-              "video": {
-                
-              }
-            }
-          },
-          "reviewsSummary": {
-            
-          },
-          "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-          "isNewlyOnboarded": true,
-          "restaurantOfferPresentationInfo": {
-            
-          }
-        },
-        "analytics": {
-          
-        },
-        "cta": {
-          "link": "swiggy://menu?restaurant_id=799679",
-          "text": "RESTAURANT_MENU",
-          "type": "DEEPLINK"
-        }
-      },
+                  },
+                  {
+                    "info": {
+                      "id": "735103",
+                      "name": "House Of Delicious",
+                      "cloudinaryImageId": "d0bdbf974886106e3203bf04801b46b8",
+                      "locality": "Utsav Bhawan",
+                      "areaName": "Purnea",
+                      "costForTwo": "₹249 for two",
+                      "cuisines": [
+                        "Snacks",
+                        "Chinese",
+                        "Burgers"
+                      ],
+                      "avgRating": 4.2,
+                      "parentId": "233841",
+                      "avgRatingString": "4.2",
+                      "totalRatingsString": "10+",
+                      "promoted": true,
+                      "adTrackingId": "cid=10519276~p=4~eid=0000018c-f29f-bff2-091b-aba400e2042b~srvts=1704877604850~45995",
+                      "sla": {
+                        "deliveryTime": 20,
+                        "lastMileTravel": 1.2,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "20 mins",
+                        "lastMileTravelString": "1.2 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-01-11 00:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "textBased": {
+                            
+                          },
+                          "imageBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "₹120 OFF",
+                        "subHeader": "ABOVE ₹199",
+                        "discountTag": "FLAT DEAL"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      }
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "swiggy://menu?restaurant_id=735103",
+                      "text": "RESTAURANT_MENU",
+                      "type": "DEEPLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "564167",
+                      "name": "Haldiram's Prabhuji",
+                      "cloudinaryImageId": "eltcarxf1yqd5p0vvymo",
+                      "locality": "Bhatta Bazar",
+                      "areaName": "Purnea Locality",
+                      "costForTwo": "₹299 for two",
+                      "cuisines": [
+                        "Snacks",
+                        "Chinese",
+                        "Beverages",
+                        "Desserts"
+                      ],
+                      "avgRating": 4.1,
+                      "veg": true,
+                      "parentId": "2945",
+                      "avgRatingString": "4.1",
+                      "totalRatingsString": "100+",
+                      "sla": {
+                        "deliveryTime": 21,
+                        "lastMileTravel": 0.7,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "21 mins",
+                        "lastMileTravelString": "0.7 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-01-10 21:15:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        "imageBadges": [
+                          {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                          }
+                        ]
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "textExtendedBadges": {
+                            
+                          },
+                          "textBased": {
+                            
+                          },
+                          "imageBased": {
+                            "badgeObject": [
+                              {
+                                "attributes": {
+                                  "imageId": "v1695133679/badges/Pure_Veg111.png",
+                                  "description": "pureveg"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "₹120 OFF",
+                        "subHeader": "ABOVE ₹199",
+                        "discountTag": "FLAT DEAL"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      }
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "swiggy://menu?restaurant_id=564167",
+                      "text": "RESTAURANT_MENU",
+                      "type": "DEEPLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "799679",
+                      "name": "Champaran Meat House",
+                      "cloudinaryImageId": "da2592e0d25f079cbf9aedf436cabf6f",
+                      "locality": "Rajeswari Nagar",
+                      "areaName": "Purnea",
+                      "costForTwo": "₹299 for two",
+                      "cuisines": [
+                        "Biryani"
+                      ],
+                      "avgRating": 4.1,
+                      "parentId": "57619",
+                      "avgRatingString": "4.1",
+                      "totalRatingsString": "10+",
+                      "sla": {
+                        "deliveryTime": 23,
+                        "lastMileTravel": 0.7,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "23 mins",
+                        "lastMileTravelString": "0.7 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-01-10 23:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "textBased": {
+                            
+                          },
+                          "imageBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "₹120 OFF",
+                        "subHeader": "ABOVE ₹199",
+                        "discountTag": "FLAT DEAL"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "isNewlyOnboarded": true,
+                      "restaurantOfferPresentationInfo": {
+                        
+                      }
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "swiggy://menu?restaurant_id=799679",
+                      "text": "RESTAURANT_MENU",
+                      "type": "DEEPLINK"
+                    }
+                  },
 ];
 
