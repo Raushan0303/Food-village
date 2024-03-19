@@ -21,27 +21,40 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
   const [restaurants, setRestaurants] = useState(restaurantList);
 
-  useEffect(()=>{
-    fetchData();
-  },[]);
+  // useEffect(()=>{
+  //   fetchData();
+  // },[]);
 
-  const fetchData = async () => {
-    const data = await fetch
-    (
-      "https://www.swiggy.com/mapi/homepage/getCards?lat=26.109221&lng=85.891952"
+//   const fetchData = async () => {
+//     const data = await fetch
+//     (
+//       "https://www.swiggy.com/mapi/homepage/getCards?lat=26.109221&lng=85.891952"
       
-    );
+//     );
   
-    const Json = await data.json();
-    console.log(Json);
-     setRestaurants(Json.data?.success?.cards[2]?.gridWidget?.gridElements?.infoWithStyle?.restaurants);
- }
+//     const Json = await data.json();
+//     console.log(Json);
+//      setRestaurants(Json.data?.success?.cards[2]?.gridWidget?.gridElements?.infoWithStyle?.restaurants);
+//  }
   if(restaurants===0){
     return <Shimmer />
   }
   
   return (
     <>
+    <div className="search-div">
+    <button
+          className="search-btn"
+          onClick={() => {
+            // filter the data
+            let filteredList = restaurantList.filter(
+              (res) => res.info.avgRating >4
+            )
+            setRestaurants(filteredList)
+          }}
+        >
+          Top-Restaurant
+        </button>
       <div className="search-container">
         <input
           type="text"
@@ -62,9 +75,11 @@ const Body = () => {
           Search
         </button>
       </div>
+    </div>
       <div className="restaurant-list">
       
-      {restaurants.map((restaurant) => {
+      {
+      restaurants.map((restaurant) => {
           return (
             <RestaurantCard key={restaurant.info.id} {...restaurant.info} />
           );
