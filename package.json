@@ -18,7 +18,10 @@
   "author": "Raushan choudhary",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.52.0",
     "parcel": "^2.10.3",
+    "prettier": "^3.1.0",
+    "prettier-eslint": "^16.1.2",
     "process": "^0.11.10"
   },
   "dependencies": {

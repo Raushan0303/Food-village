@@ -1,12 +1,16 @@
+import { useState } from "react";
 
 const Title = () => (
   <a href="/">
-    <img className="logo" src="https://lh3.googleusercontent.com/p/AF1QipMKTUs5jo3Hoihm-GazeAIg7Pn5Gmr07GQD5o6W=w1080-h608-p-no-v0" alt="Food Fire Logo" />
+    <img className="logo" src="https://cdn.vectorstock.com/i/500p/71/81/restaurant-map-pointer-icons-food-bar-or-cafe-vector-47317181.avif" alt="Food Fire Logo" />
   </a>
 );
 
 // Header component for header section: Logo, Nav Items
 const Header = () => {
+
+  const [btnNameReact, setBtnNameReact]= useState("Login")
+
   return (
     <div className="header">
       <Title />
@@ -15,9 +19,16 @@ const Header = () => {
           <li>Home</li>
           <li>About</li>
           <li>Contact</li>
-          <li>
-            <i className="fa-solid fa-cart-shopping"></i>
-          </li>
+          <li>cart</li>
+          <button 
+          onClick={()=>{
+            btnNameReact==="Login" ?
+             setBtnNameReact("Logout"): 
+             setBtnNameReact("Login")
+          }}
+          
+          className="login">{btnNameReact}</button>
+
         </ul>
       </div>
     </div>

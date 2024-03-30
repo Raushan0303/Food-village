@@ -54,3 +54,8 @@ import {Component} from "path"
 # React Hooks
 - useState()
 - useEffect()
+
+- what useEffect() does? it's a callback function, when the executes line by line, when
+- useEffect() got appeared it will save the callback function to call it after render
+- means after randring the whole code then useEffect comes into the picture does the magic
+- and render the wholepage again

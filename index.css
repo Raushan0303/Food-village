@@ -16,21 +16,29 @@
     box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
     color: black;
     font-weight: bold;
+    height: 90px;
+    
   }
   
-  .logo {
+  .header .logo {
     padding-left: 0px;
-    width: 100px;
+    height: 86px;
+    object-fit: cover;
+    object-position: center;
   }
   
   .nav-items {
     padding: 0 10px 0;
     width: auto;
+    display: flex;
+    text-align: center;
+    
   }
   
   .nav-items > ul {
     list-style-type: none;
     display: flex;
+    text-align: center;
   }
   
   .nav-items > ul > li {
@@ -38,9 +46,19 @@
     font-size: large;
     cursor: pointer;
   }
+  .filter {
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the start (left) of the flex container */
+    align-items: center;
+  }
+  .filter-btn {
+    margin-right: 10px; /* Adjust margin as needed */
+  }
   
   /* Body CSS */
   .search-container {
+    flex: 1; /* Added */
+    margin-right: 10px; /* Adjust as needed */
     margin: 20px auto;
     text-align: center;
     max-width: 100%;
@@ -155,13 +173,38 @@
     color: rgb(203, 54, 0);
   }
   
-  shimmer-container{
+
+  .shimmer-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 8px 50px;
   }
-  shimmer-card{
-    margin: 20px;
+  
+  .shimmer-card {
     width: 200px;
-    height: 400px;
+    height: 350px;
     background-color: #f0f0f0;
+    margin: 5px;
+    animation: shimmer 1s infinite linear;
+    border-radius: 5px;
+    box-shadow: -1px 5px 10px 5px rgba(42, 42, 42, 0.2);
+    padding: 10px;
+    margin: 20px; 
   }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200px 0;
+    }
+    100% {
+      background-position: 200px 0;
+    }
+  }
+
+  .login{
+    padding: 0 20px;
+    cursor: pointer;
+  }
+
