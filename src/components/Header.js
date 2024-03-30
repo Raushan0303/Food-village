@@ -30,6 +30,7 @@ const Header = () => {
    * which cause the latency insted of using achor tag we use <link> tag given by 
    * react-router-dom which does not reload the whole page in order to redirect ot another
    * page, which makes link tag more efficent and fast  
+   * 
    */
 
   return (

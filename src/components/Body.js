@@ -28,7 +28,7 @@ const Body = () => {
       }
   
       const jsonData = await data.json();
-      console.log(jsonData);
+      // console.log(jsonData);
       // Access the restaurants array inside the data object
       setRestaurants(jsonData?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants|| []);
       setFilteredRestaurant(jsonData?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants|| [])

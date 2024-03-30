@@ -59,3 +59,7 @@ import {Component} from "path"
 - useEffect() got appeared it will save the callback function to call it after render
 - means after randring the whole code then useEffect comes into the picture does the magic
 - and render the wholepage again
+
+# 2 types Routing in web apps
+    - Client Side Routing
+    - Server Side Routing 
