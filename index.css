@@ -125,10 +125,12 @@
     justify-content: space-evenly;
     margin-top: 10px;
     text-align: center;
+    text-decoration: none;
   }
   
   .card > span > h4 {
     font-size: medium;
+    text-decoration: none;
   }
   
   .card > span > h4:first-child {
@@ -138,11 +140,13 @@
     border-radius: 5px;
     padding: 0 5px 0;
     color: white;
+    text-decoration: none;
   }
   
   .card > span > h4:first-child .fa-star {
     font-size: small;
     padding: 0 10px 3px 0;
+    text-decoration: none;
   }
   
   /* footer CSS */
