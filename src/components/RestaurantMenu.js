@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
-// import { MENU_API } from "../utils/constant";
+import { MENU_API } from "../utils/constant";
 
 
 const RestaurantMenu = () => {
@@ -16,14 +16,15 @@ const RestaurantMenu = () => {
 
     const fetchMenu = async () => {
         try {
-            const data = await fetch("https://foodfire.onrender.com/api/menu?page-type=REGULAR_MENU&complete-menu=true&lat=21.1702401&lng=72.83106070000001&&submitAction=ENTER&restaurantId=" + resId);
+            const data = await fetch(MENU_API + resId);
             const jsonData = await data.json();
             setResInfo(jsonData?.data);
+            
         } catch (error) {
             console.error("Error fetching menu:", error);
         }
     };
-   
+   console.log(resInfo)
     if (resInfo === null) return <Shimmer />;
 
     const {name,cuisines, costForTwoMessage,avgRatingString} = resInfo?.cards[2]?.card?.card?.info;
