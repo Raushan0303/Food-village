@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Title = () => (
   <a href="/">
@@ -11,8 +12,7 @@ const Title = () => (
 const Header = () => {
 
   const [btnNameReact, setBtnNameReact]= useState("Login");
-  console.log("Header Render");
-
+  const onlineStatus = useOnlineStatus();
   //if no dependency array => useEffect is called on every render
   //(every time component got render useEffect will be called when dependency array is not present)
 
@@ -38,6 +38,9 @@ const Header = () => {
       <Title />
       <div className="nav-items">
         <ul>
+        <li>
+            onlineStatus: {onlineStatus ? "" : ""}
+          </li>
           <li>
           <Link to= "/">Home</Link>
           </li>
@@ -46,6 +49,9 @@ const Header = () => {
           </li>
           <li>
           <Link to= "/contact">contact</Link>
+          </li>
+          <li>
+          <Link to= "/grocery">Grocery</Link>
           </li>
           <li>cart</li>
           <button 
