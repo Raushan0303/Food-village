@@ -38,9 +38,13 @@ const RestaurantMenu = () => {
                         {item.card.info.price/100} </li>
                 )}
             </ul> */}
+           
             {categories.map((category)=>(
-                <RestaurantCateogry data={category.card.card} />
+                <RestaurantCateogry 
+                key={category?.card?.card.title}
+                data={category.card.card} />
             ))}
+           
         </div>
     );
 }

@@ -1,17 +1,14 @@
-const ItemList = ({ items }) => {
-    if (!items || items.length === 0) {
-        return <div>No items to display</div>;
-    }
-
+const ItemList = ({items}) =>{
     return (
         <div>
             {items.map((item) => (
-                <div key={item.card.info.id}>
+                <div key={item.card.info.id}
+                className="p-2 m-2 border-gray-200 border-b-5">
                     <div>
                         <span>{item.card.info.name}</span>
                         <span>{item.card.info.price}</span>
                     </div>
-                    <p>{item.card.info.description}</p>
+                    <p className="text-xs">{item.card.info.description}</p>
                 </div>
             ))}
         </div>

@@ -1,6 +1,6 @@
 import ItemList from "./itemList";
 const RestaurantCateogry = ({data}) => {
-   
+  //  console.log(data.itemCards[0].card.info.id)
     return (
        
         <div>
@@ -11,7 +11,7 @@ const RestaurantCateogry = ({data}) => {
                 ({data.itemCards.length})</span>
                 <span>🔽</span>
               </div>
-                <ItemList items={data.itemCards}/>
+              <ItemList items={data.itemCards}/>
             </div>
         </div>
     )
