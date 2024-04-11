@@ -4,7 +4,7 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Title = () => (
   <a href="/">
-    <img className="logo" src="https://cdn.vectorstock.com/i/500p/71/81/restaurant-map-pointer-icons-food-bar-or-cafe-vector-47317181.avif" alt="Food Fire Logo" />
+    <img className="w-56" src="https://cdn.vectorstock.com/i/500p/71/81/restaurant-map-pointer-icons-food-bar-or-cafe-vector-47317181.avif" alt="Food Fire Logo" />
   </a>
 );
 
@@ -34,26 +34,26 @@ const Header = () => {
    */
 
   return (
-    <div className="header">
+    <div className="flex justify-between bg-pink-100 shadow-lg mb-3">
       <Title />
-      <div className="nav-items">
-        <ul>
-        <li>
+      <div className="flex items-center">
+        <ul className="flex p-4 m-4">
+        <li className="px-4">
             onlineStatus: {onlineStatus ? "" : ""}
           </li>
-          <li>
+          <li className="px-4">
           <Link to= "/">Home</Link>
           </li>
-          <li>
+          <li className="px-4" >
             <Link to= "/about">About</Link>
           </li>
-          <li>
+          <li className="px-4">
           <Link to= "/contact">contact</Link>
           </li>
-          <li>
+          <li className="px-4">
           <Link to= "/grocery">Grocery</Link>
           </li>
-          <li>cart</li>
+          <li className="px-4">cart</li>
           <button 
           onClick={()=>{
             btnNameReact==="Login" ?

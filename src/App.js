@@ -30,14 +30,14 @@ const Grocery = lazy(()=>import("./components/Grocery"));
 
 const AppLayout = () => {
   return (
-    <React.Fragment>
+    <>
       <Header />
       <Outlet /> 
-    </React.Fragment>
+    </>
   );
 };
 
-/** according to the route this Outlet being fullfilled by the corresponding childere 
+/** according to the route this Outlet being fullfilled by the corresponding childeren 
   for eg: if the route change to "/" the Outlet will be replaced by <Body />  
   and if the route changes to the "/about" the outlet will be replaced with <About />
   component (wow), this powerful feature give us by React-router-dom
