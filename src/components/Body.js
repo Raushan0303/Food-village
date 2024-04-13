@@ -1,8 +1,9 @@
 import RestaurantCard,{withPromotedLabel} from "./RestaurantCard";
-import { useState, useEffect } from "react";
+import { useState, useEffect,useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/userContext";
 
 
 
@@ -51,7 +52,7 @@ const Body = () => {
 
   if(onlineStatus === false) return <h1>Looks like You're offline!! Please check your internet</h1>
 
-
+  const {setUserName,loggedInUser} = useContext(UserContext);
 // conditional rendering (a rendering based on the condition is called condition rendering)
   // if (loading) {
   //   return <div><Shimmer /></div>;
@@ -99,7 +100,12 @@ const Body = () => {
           Top Rated restaurant
         </button>
       </div>
-      
+      <div className="m-4 p-4 flex items-center">
+        <label>UserName:</label>
+          <input className="border border-black"
+          value={loggedInUser}
+          onChange={(e)=>setUserName(e.target.value)}></input>
+      </div>
     </div>
 
     
@@ -112,7 +118,7 @@ const Body = () => {
                {restaurant.info.promoted ?
                 (<RestaurantCardPromoted  {...restaurant.info}/>)
                : (<RestaurantCard  {...restaurant.info} />)}
-           
+
           </Link>
           
         ))}

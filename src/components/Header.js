@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/userContext";
 
 const Title = () => (
   <a href="/">
@@ -12,6 +13,10 @@ const Title = () => (
 const Header = () => {
 
   const [btnNameReact, setBtnNameReact]= useState("Login");
+  const {loggedInUser} = useContext(UserContext);
+  console.log(loggedInUser);
+
+
   const onlineStatus = useOnlineStatus();
   //if no dependency array => useEffect is called on every render
   //(every time component got render useEffect will be called when dependency array is not present)
@@ -21,10 +26,6 @@ const Header = () => {
   // if dependecy array is (btnNameReact) => called every time btnNameReact is updated the useEffect called
   
 
-
-  useEffect(()=>{
-    console.log("useEffect called");
-  },[btnNameReact]);
   /**
    * when we use anchor tag to link the page (<a></a>), it reloads the whole page,
    * which cause the latency insted of using achor tag we use <link> tag given by 
@@ -54,6 +55,7 @@ const Header = () => {
           <Link to= "/grocery">Grocery</Link>
           </li>
           <li className="px-4">cart</li>
+          <li className="px-4">{loggedInUser}</li>
           <button 
           onClick={()=>{
             btnNameReact==="Login" ?
@@ -64,6 +66,7 @@ const Header = () => {
           className="login">{btnNameReact}</button>
 
         </ul>
+       
       </div>
     </div>
   );
