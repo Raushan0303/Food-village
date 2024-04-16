@@ -9,6 +9,8 @@ import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 import UserContext from "./utils/userContext";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { Provider } from "react-redux";
+import appStore from "./utils/addStore";
 
 
 // Chunking
@@ -46,12 +48,14 @@ const AppLayout = () => {
 
 
   return (
+    <Provider store={appStore}>
     <UserContext.Provider value={{loggedInUser: userName, setUserName}}>
      <>
         <Header />
          <Outlet /> 
       </>
     </UserContext.Provider>
+    </Provider>
   );
 };
 
