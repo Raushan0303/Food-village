@@ -11,6 +11,7 @@ import UserContext from "./utils/userContext";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
 import appStore from "./utils/addStore";
+import Cart from "./components/cart";
 
 
 // Chunking
@@ -95,6 +96,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurants/:resId",
         element: <RestaurantMenu />
+      },
+      {
+        path: "/cart",
+        element: <Cart />
       }
     ],
     errorElement: <Error />
